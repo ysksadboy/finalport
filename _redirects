@@ -1,0 +1,32 @@
+# Redirects from what the browser requests to what we serve
+/home                /
+/blog/my-post.php    /blog/my-post
+/news                /blog
+/cuties              https://www.petsofnetlify.com
+/authors/c%C3%A9line /authors/about-c%C3%A9line
+# If skip_processing = true, all other settings are ignored
+[build.processing]
+  skip_processing = false
+[build.processing.css]
+  bundle = true
+  minify = false
+[build.processing.js]
+  bundle = true
+  minify = false
+[build.processing.images]
+  compress = true
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+
+    #  Multi-value headers are expressed with multi-line strings
+	cache-control = '''
+	max-age=0,
+	no-cache,
+	no-store,
+	must-revalidate'''
+
+    # The Basic-Auth header may not be available on all plans.
+    Basic-Auth = "someuser:somepassword anotheruser:anotherpassword"
