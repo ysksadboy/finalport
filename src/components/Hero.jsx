@@ -130,7 +130,7 @@ const Hero = () => {
           <Title>Andrew,</Title>
           <br></br>
           <WhatWeDo>
-            <Line src="./src/img/line.png" />
+            <Line src="../img/line.png" />
             <Subtitle>What I Do?</Subtitle>
           </WhatWeDo>
           <Desc>
@@ -154,7 +154,7 @@ const Hero = () => {
               </Sphere>
             </Suspense>
           </Canvas>
-          <Img src="./src/img/moon.png" />
+          <Img src="../img/moon.png" />
         </Right>
       </Container>
     </Section>
