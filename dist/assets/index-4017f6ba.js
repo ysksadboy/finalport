@@ -148,7 +148,7 @@ Error generating stack: `+s.message+`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-`,WU=()=>Xe(UU,{children:cn(kU,{children:[cn(NU,{children:[Xe(OU,{src:"./src/img/logo.png"}),cn(zU,{children:[Xe(cm,{children:"Home"}),Xe(cm,{children:"Studio"}),Xe(cm,{children:"Works"}),Xe(cm,{children:"Contact"})]})]}),cn(GU,{children:[Xe(HU,{src:"./src/img/search.png"}),Xe(VU,{children:"Hire Now"})]})]})});/**
+`,WU=()=>Xe(UU,{children:cn(kU,{children:[cn(NU,{children:[Xe(OU,{src:"../img/logo.png"}),cn(zU,{children:[Xe(cm,{children:"Home"}),Xe(cm,{children:"Studio"}),Xe(cm,{children:"Works"}),Xe(cm,{children:"Contact"})]})]}),cn(GU,{children:[Xe(HU,{src:"../img/search.png"}),Xe(VU,{children:"Hire Now"})]})]})});/**
  * @license
  * Copyright 2010-2023 Three.js Authors
  * SPDX-License-Identifier: MIT
@@ -4264,7 +4264,7 @@ vec3 texelOld = texture2D(previousShadowMap, vUv).rgb;
       transform: translateY(20px);
     }
   }
-`,kV=()=>cn(CV,{children:[Xe(WU,{}),cn(bV,{children:[cn(DV,{children:[Xe(FC,{children:"I'm"}),Xe(FC,{children:"Andrew,"}),Xe("br",{}),cn(PV,{children:[Xe(RV,{src:"./src/img/line.png"}),Xe(BV,{children:"What I Do?"})]}),Xe(IV,{children:"I enjoy creating , human-centered digital experiences."}),Xe(LV,{children:"Learn More"})]}),cn(FV,{children:[Xe(Zd,{children:cn(Y.Suspense,{fallback:null,children:[Xe($d,{enableZoom:!1}),Xe("ambientLight",{intensity:1}),Xe("directionalLight",{position:[3,2,1]}),Xe(nB,{args:[1,100,200],scale:2.4,children:Xe(rV,{color:"#3d1c56",attach:"material",distort:.5,speed:2})})]})}),Xe(UV,{src:"./src/img/moon.png"})]})]})]}),NV=()=>{const n=Y.useRef();return ys(e=>n.current.position.x=Math.sin(e.clock.elapsedTime)*2),cn("mesh",{children:[Xe("boxGeometry",{}),Xe("meshStandardMaterial",{children:cn(EV,{attach:"map",children:[Xe(eV,{makeDefault:!0,position:[0,0,5]}),Xe("color",{attach:"background",args:["#B6F2FF"]}),Xe(q9,{ref:n,fontSize:3,color:"#555",children:"andrew"})]})})]})},OV=Pt.div`
+`,kV=()=>cn(CV,{children:[Xe(WU,{}),cn(bV,{children:[cn(DV,{children:[Xe(FC,{children:"I'm"}),Xe(FC,{children:"Andrew,"}),Xe("br",{}),cn(PV,{children:[Xe(RV,{src:"../img/line.png"}),Xe(BV,{children:"What I Do?"})]}),Xe(IV,{children:"I enjoy creating , human-centered digital experiences."}),Xe(LV,{children:"Learn More"})]}),cn(FV,{children:[Xe(Zd,{children:cn(Y.Suspense,{fallback:null,children:[Xe($d,{enableZoom:!1}),Xe("ambientLight",{intensity:1}),Xe("directionalLight",{position:[3,2,1]}),Xe(nB,{args:[1,100,200],scale:2.4,children:Xe(rV,{color:"#3d1c56",attach:"material",distort:.5,speed:2})})]})}),Xe(UV,{src:"../img/moon.png"})]})]})]}),NV=()=>{const n=Y.useRef();return ys(e=>n.current.position.x=Math.sin(e.clock.elapsedTime)*2),cn("mesh",{children:[Xe("boxGeometry",{}),Xe("meshStandardMaterial",{children:cn(EV,{attach:"map",children:[Xe(eV,{makeDefault:!0,position:[0,0,5]}),Xe("color",{attach:"background",args:["#B6F2FF"]}),Xe(q9,{ref:n,fontSize:3,color:"#555",children:"andrew"})]})})]})},OV=Pt.div`
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
@@ -4319,7 +4319,7 @@ vec3 texelOld = texture2D(previousShadowMap, vUv).rgb;
   border-radius: 5px;
   cursor: pointer;
   
-`,KV=()=>Xe(OV,{children:cn(zV,{children:[Xe(GV,{children:Xe(Zd,{camera:{position:[5,5,5],fov:25},children:cn(Y.Suspense,{fallback:null,children:[Xe("ambientLight",{intensity:.5}),Xe("directionalLight",{position:[3,2,1]}),Xe(NV,{}),Xe($d,{enableZoom:!1,autoRotate:!0})]})})}),cn(VV,{children:[Xe(HV,{children:"Think outside of That Square Space"}),cn(WV,{children:[Xe(jV,{src:"./src/img/line.png"}),Xe(XV,{children:"Who Am i?"})]}),Xe(JV,{children:"a creative designer && developer with a passion for self improvement."}),Xe(YV,{src:"https://github.com/ysksadboy",children:"See My works"})]})]})});/**
+`,KV=()=>Xe(OV,{children:cn(zV,{children:[Xe(GV,{children:Xe(Zd,{camera:{position:[5,5,5],fov:25},children:cn(Y.Suspense,{fallback:null,children:[Xe("ambientLight",{intensity:.5}),Xe("directionalLight",{position:[3,2,1]}),Xe(NV,{}),Xe($d,{enableZoom:!1,autoRotate:!0})]})})}),cn(VV,{children:[Xe(HV,{children:"Think outside of That Square Space"}),cn(WV,{children:[Xe(jV,{src:"../img/line.png"}),Xe(XV,{children:"Who Am i?"})]}),Xe(JV,{children:"a creative designer && developer with a passion for self improvement."}),Xe(YV,{src:"https://github.com/ysksadboy",children:"See My works"})]})]})});/**
  * postprocessing v6.32.2 build Sat Jul 01 2023
  * https://github.com/pmndrs/postprocessing
  * Copyright 2015-2023 Raoul van Rüschen
@@ -6084,7 +6084,7 @@ void main() {
   overflow-y: auto;
   scrollbar-width: none;
   color: white;
-  background: url("./src/img/bg.jpeg");
+  background: url("../img/bg.jpeg");
   &::-webkit-scrollbar{
     display: none;
   }
