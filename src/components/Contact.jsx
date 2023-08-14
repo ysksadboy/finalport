@@ -74,52 +74,52 @@ const Right = styled.div`
 `;
 
 const Contact = () => {
-    const ref = useRef();
-    const [success, setSuccess] = useState(null);
+  const ref = useRef();
+  const [success, setSuccess] = useState(null);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-        emailjs.sendForm(
-            'service_5at10lo',
-            'template_50hiugu',
-            ref.current,
-            'Nj5PNS1MGYZOrro8Y'
-        )
-            .then(
-                (result) => {
-                    console.log(result.text);
-                    setSuccess(true);
-                },
-                (error) => {
-                    console.log(error.text);
-                    setSuccess(false);
-                }
-            );
-    };
-    return (
-        <Section>
-            <Container>
-                <Left>
-                    <Form ref={ref} onSubmit={handleSubmit}>
-                        <Title>Contact Me</Title>
-                        <Input placeholder="Name" name="from_name" rows={1} />
-                        <Input placeholder="Email" name="email_id" rows={1} />
-                        <TextArea
-                            placeholder="Write your message"
-                            name="message"
-                            rows={10}
-                        />
-                        <Button type="submit">Send</Button>
-                        {success &&
-                            "Your message has been sent. I will get back to you soon :)"}
-                    </Form>
-                </Left>
-                <Right>
-                </Right>
-            </Container>
-        </Section>
-    );
+    emailjs.sendForm(
+      'service_5at10lo',
+      'template_50hiugu',
+      ref.current,
+      'Nj5PNS1MGYZOrro8Y'
+    )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSuccess(true);
+        },
+        (error) => {
+          console.log(error.text);
+          setSuccess(false);
+        }
+      );
+  };
+  return (
+    <Section>
+      <Container>
+        <Left>
+          <Form ref={ref} onSubmit={handleSubmit}>
+            <Title>Contact Me</Title>
+            <Input placeholder="Name" name="from_name" rows={1} />
+            <Input placeholder="Email" name="email_id" rows={1} />
+            <TextArea
+              placeholder="Write your message"
+              name="message"
+              rows={10}
+            />
+            <Button type="submit">Send</Button>
+            {success &&
+              "Your message has been sent. I will get back to you soon :)"}
+          </Form>
+        </Left>
+        <Right>
+        </Right>
+      </Container>
+    </Section>
+  );
 };
 
 export default Contact;
